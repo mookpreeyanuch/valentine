@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./style/css/enhanced_styles.css">
-        
+        <!-- Additional styles may be added here or in the enhanced_styles.css -->
     </head> 
     <body>
         <div class="container">
@@ -12,23 +12,33 @@
             <div class="gif_container">
                 <img src="https://media.giphy.com/media/wHUWuJWg6iRRQWTBd1/giphy.gif" alt="Cute animated illustration">
             </div>
-            <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes.html";
-                    }
-                    
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script> 
+            <div class="buttons">
+                <button class="btn" id="yesButton">Yes</button>
+                <button class="btn" id="noButton">No</button>
             </div>
         </div>
-       
+        <script>
+            const phrases = [
+                "No",
+                "Are you sure?",
+                "Really sure?",
+                "Pleasee",
+                "Don't do this to me",
+                "I'm gonna cry...",
+                "You're breaking my heart :(",
+            ];
+
+            let noCount = 0;
+
+            document.getElementById('noButton').addEventListener('click', function() {
+                this.textContent = phrases[Math.min(noCount, phrases.length - 1)];
+                this.style.fontSize = `${16 + noCount * 2}px`; // Increase font size
+                noCount++;
+            });
+
+            document.getElementById('yesButton').addEventListener('click', function() {
+                window.location.href = "yes.html";
+            });
+        </script> 
     </body> 
 </html>

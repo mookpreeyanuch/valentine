@@ -56,13 +56,11 @@ button:hover {
     transform: translateY(-2px); /* Button moves up slightly when hovered */
 }
 
-/* Extra styles for specific buttons if needed */
-#noButton {
-    /* Additional styles for the 'No' button if needed */
-}
 
-#yesButton {
-    /* Additional styles for the 'Yes' button if needed */
+/* Additional styles for the interactive buttons */
+.btn {
+    position: relative; /* Allows the button to move based on 'top' and 'left' properties */
+    transition: font-size 0.3s ease; /* Smooth transition for font-size change */
+    overflow: visible; /* Ensures the text is never cut off */
+    white-space: nowrap; /* Keeps the button text on one line */
 }
-
-/* Any additional styles can be added here */
