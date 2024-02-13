@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffe6e8; /* Lighter pink for a softer look */
+    background-color: #FFF5E4; /* Lighter pink for a softer look */
     font-family: 'Comic Neue', cursive; /* More playful font throughout the body */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -15,10 +15,10 @@ body {
 }
 
 .header_text {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'courier';   
     font-size: 50px;
     font-weight: bold;
-    color: #f66775; /* A more vibrant color */
+    color: #FF9494; /* A more vibrant color */
     text-shadow: 2px 2px 4px #ffb6c1; /* Soft shadow for depth */
     animation: pulse 2s infinite; /* An animation to make the text gently pulse */
 }
@@ -35,7 +35,7 @@ body {
 }
 
 button {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'courier';   
     /* background-color: #ff6699;  */
     border: none;
     border-radius: 20px; /* Rounded corners */
