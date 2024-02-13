@@ -64,3 +64,23 @@ button:hover {
     overflow: visible; /* Ensures the text is never cut off */
     white-space: nowrap; /* Keeps the button text on one line */
 }
+
+
+/* Style adjustments for Yes and No buttons */
+#yesButton {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    padding: 20px 40px; /* Larger padding for a bigger button */
+    font-size: 1.5em; /* Larger font size for text */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#noButton {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding */
+    font-size: 1em; /* Default font size */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+}
