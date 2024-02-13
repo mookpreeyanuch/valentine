@@ -1,0 +1,68 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6f0; /* Lighter pink for a softer look */
+    font-family: 'Comic Neue', cursive; /* More playful font throughout the body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.container {
+    text-align: center; /* Center the content in the container */
+}
+
+.header_text {
+    font-family: 'Comic Neue', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff6699; /* A more vibrant color */
+    text-shadow: 2px 2px 4px #ffb6c1; /* Soft shadow for depth */
+    animation: pulse 2s infinite; /* An animation to make the text gently pulse */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.gif_container {
+    margin: 20px 0; /* Add some space around the GIF */
+    box-shadow: 0 0 15px #ff6699; /* Shadow to make the GIF pop */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-family: 'Comic Neue', cursive;
+    background-color: #ff6699; /* Matching the header color */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer; /* The cursor will be a pointer when hovering over the buttons */
+    box-shadow: 0 5px #666; /* Shadow for depth */
+    transition: all 0.3s ease; /* Transition for smooth effect */
+}
+
+button:hover {
+    background-color: #ff99bb; /* Lighter color on hover */
+    box-shadow: 0 2px #555; /* Smaller shadow on hover */
+    transform: translateY(-2px); /* Button moves up slightly when hovered */
+}
+
+/* Extra styles for specific buttons if needed */
+#noButton {
+    /* Additional styles for the 'No' button if needed */
+}
+
+#yesButton {
+    /* Additional styles for the 'Yes' button if needed */
+}
+
+/* Any additional styles can be added here */
