@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffe6f0; /* Lighter pink for a softer look */
+    background-color: #ffe6e8; /* Lighter pink for a softer look */
     font-family: 'Comic Neue', cursive; /* More playful font throughout the body */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -18,7 +18,7 @@ body {
     font-family: 'Comic Neue', cursive;
     font-size: 50px;
     font-weight: bold;
-    color: #ff6699; /* A more vibrant color */
+    color: #f66775; /* A more vibrant color */
     text-shadow: 2px 2px 4px #ffb6c1; /* Soft shadow for depth */
     animation: pulse 2s infinite; /* An animation to make the text gently pulse */
 }
@@ -29,10 +29,6 @@ body {
     100% { transform: scale(1); }
 }
 
-.gif_container {
-    margin: 20px 0; /* Add some space around the GIF */
-    box-shadow: 0 0 15px #ff6699; /* Shadow to make the GIF pop */
-}
 
 .buttons {
     margin-top: 20px;
@@ -40,7 +36,7 @@ body {
 
 button {
     font-family: 'Comic Neue', cursive;
-    background-color: #ff6699; /* Matching the header color */
+    /* background-color: #ff6699;  */
     border: none;
     border-radius: 20px; /* Rounded corners */
     padding: 10px 20px;
@@ -51,7 +47,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff99bb; /* Lighter color on hover */
+    background-color: #ff99a5; /* Lighter color on hover */
     box-shadow: 0 2px #555; /* Smaller shadow on hover */
     transform: translateY(-2px); /* Button moves up slightly when hovered */
 }
